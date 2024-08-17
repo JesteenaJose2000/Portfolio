@@ -1,0 +1,129 @@
+@import "../../styles.scss";
+
+.skills-container {
+  background-color: $secondary-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: serif;
+  padding-top: 60px;
+}
+
+.radial-bars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  .radial-bar {
+    height: 170px;
+    margin-bottom: 40px;
+    position: relative;
+    color: $primary-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    opacity: 0.8;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      height: 160px;
+    }
+
+    .progress-bar {
+      stroke-width: 10;
+      stroke: $primary-bg-color;
+      fill: transparent;
+      stroke-dasharray: 376;
+      stroke-linecap: round;
+    }
+
+    .text {
+      position: absolute;
+      bottom: -15px;
+      font-size: 17px;
+      font-weight: 500;
+      animation: showText 0.5 1s linear forwards;
+    }
+
+    .percentage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 17px;
+      font-weight: 500;
+      animation: showText 0.5 1s linear forwards;
+    }
+  }
+}
+
+.row {
+  margin-bottom: 40px;
+}
+
+.path {
+  stroke-width: 10;
+  stroke: $progress-color;
+  fill: transparent;
+  stroke-dashoffset: 376;
+  stroke-dasharray: 376;
+  stroke-linecap: round;
+}
+
+@keyframes animate-path1 {
+  from {
+    stroke-dashoffset: 376;
+  }
+}
+
+.path-1 {
+  stroke-width: 10;
+  stroke: $progress-color;
+  fill: transparent;
+  stroke-linecap: round;
+  animation: animate-path1 1s linear forwards;
+  transition: stroke-dashoffset 1s ease;
+  filter: blur(3px) brightness(1.2);
+}
+
+.box-shadow {
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2),
+    -1px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+
+  .skill-text {
+    color: $primary-text-color;
+  }
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $primary-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-text-color;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.dot.proficient {
+  background-color: $progress-color;
+  color: $secondary-text-color;
+}

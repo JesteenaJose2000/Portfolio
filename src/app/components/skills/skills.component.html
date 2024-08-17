@@ -1,0 +1,49 @@
+<div class="skills-container px-5">
+  <div class="header">Technical Skills</div>
+  <div class="radial-bars" #skills>
+    <div class="radial-bar" *ngFor="let skill of techSkills">
+      <svg x="0px" y="0px" viewBox="0 0 200 200">
+        <circle
+          class="progress-bar"
+          cx="100"
+          cy="100"
+          r="60"
+          [attr.stroke-dasharray]="circumference"
+        ></circle>
+        <circle
+          class="path path-1"
+          cx="100"
+          cy="100"
+          r="60"
+          [attr.stroke-dasharray]="circumference"
+          [attr.stroke-dashoffset]="getStrokeDashoffset(skill.progress)"
+        ></circle>
+      </svg>
+      <div class="percentage">{{ skill.progress }}%</div>
+      <div class="text">{{ skill.name }}</div>
+    </div>
+  </div>
+
+  <div class="header">Language Skills</div>
+  <div class="row box-shadow justify-content-center">
+    <div class="sub-container col-6" *ngFor="let language of languages">
+      <div class="skill-text">{{ language.name }}</div>
+      <div class="dot" [ngClass]="{ proficient: language.level >= 1 }">A1</div>
+      <div class="dot" [ngClass]="{ proficient: language.level >= 2 }">A2</div>
+      <div class="dot" [ngClass]="{ proficient: language.level >= 3 }">B1</div>
+      <div class="dot" [ngClass]="{ proficient: language.level >= 4 }">B2</div>
+      <div class="dot" [ngClass]="{ proficient: language.level >= 5 }">C1</div>
+      <div class="dot" [ngClass]="{ proficient: language.level >= 6 }">C2</div>
+    </div>
+  </div>
+
+  <div class="header">Interpersonal Skills</div>
+  <div class="row justify-content-center">
+    <div
+      class="sub-container col-3 box-shadow m-2"
+      *ngFor="let interpersonalSkill of interpersonalSkills"
+    >
+      <div class="skill-text">{{ interpersonalSkill }}</div>
+    </div>
+  </div>
+</div>

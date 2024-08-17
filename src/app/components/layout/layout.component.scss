@@ -1,0 +1,43 @@
+@import "../../styles.scss";
+
+.home-container {
+  background-color: $primary-bg-color;
+  min-height: 50vh;
+  margin: 0px;
+  color: $primary-text-color;
+  font-family: serif;
+  img {
+    max-height: 50vh;
+    opacity: 0.9;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .typing-text {
+    font-weight: 900;
+    font-size: 28px;
+    color: $header-text-color;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .contact{
+    padding-bottom: 20px;
+  }
+
+  svg {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+img {
+  pointer-events: none;
+}

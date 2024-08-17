@@ -1,0 +1,17 @@
+$primary-bg-color: #18122b;
+$secondary-bg-color: #393053;
+$light-bg-color: #ffffff;
+$primary-text-color: #ffffff;
+$secondary-text-color: #635985;
+$header-text-color: #c8acd6;
+$dark-text-color: #18122b;
+$primary-btn-color: #635985;
+$primary-hover-color: #635985;
+$progress-color: #c8acd6;
+
+.header {
+  padding: 10px 10px 40px 10px;
+  font-size: 20px;
+  color: $header-text-color;
+  font-weight: 600;
+}

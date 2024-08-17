@@ -1,0 +1,46 @@
+@import "../../styles.scss";
+
+.internship-container {
+  background-color: $secondary-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: serif;
+  padding-top: 50px;
+}
+
+img {
+  pointer-events: none;
+  height: 350px;
+}
+
+.card {
+  width: 40vw;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  margin: 0;
+}
+
+.card-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.card-title {
+  font-size: 18px;
+  color: $dark-text-color;
+  margin-bottom: 3px;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}

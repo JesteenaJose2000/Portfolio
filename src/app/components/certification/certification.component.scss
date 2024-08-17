@@ -1,0 +1,38 @@
+@import "../../styles.scss";
+
+.certi-container {
+  background-color: $secondary-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: serif;
+  padding-top: 50px;
+
+  .list-container {
+    color: $primary-text-color;
+    width: 50vw;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2),
+      -1px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: $primary-bg-color;
+  }
+  .item {
+    .platform {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      padding-bottom: 0;
+      gap: 20px;
+    }
+    .courses {
+      padding-left: 116px;
+    }
+  }
+}
+
+img {
+  width: 50px;
+  border-radius: 50%;
+}

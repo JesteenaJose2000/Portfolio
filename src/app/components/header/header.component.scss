@@ -1,0 +1,47 @@
+@import "../../styles.scss";
+
+.nav-item .dropdown-item {
+  cursor: pointer;
+  color: $dark-text-color;
+}
+
+.navbar-nav .dropdown-menu {
+  width: 20px;
+}
+
+.nav-item .dropdown-item:hover {
+  background-color: $primary-hover-color;
+}
+
+.navbar {
+  background-color: $primary-bg-color;
+  font-family: serif;
+}
+
+a {
+  color: $primary-text-color;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $secondary-text-color;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: $primary-hover-color;
+}
+
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.navbar-toggler{
+  background-color: $primary-btn-color;
+  font-size: 12px;
+}

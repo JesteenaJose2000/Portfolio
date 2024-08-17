@@ -1,0 +1,28 @@
+<div class="project-container">
+  <div class="header">Projects</div>
+  <div class="list-container" *ngFor="let project of projects">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" *ngIf="project.images">
+      <div class="carousel-inner">
+        <div class="carousel-item" [ngClass]="{ active: index === 0 }" data-interval="3000"
+          *ngFor="let image of project.images;let index = index">
+          <img [src]="image" class="d-block w-100" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+    <video *ngIf="project.video" controls muted>
+      <source [src]="project.video" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="title">{{ project.title }}</div>
+    <div class="description">{{ project.description }}</div>
+    <div class="skills" *ngFor="let skill of project.skills">
+      {{ skill }}
+    </div>
+  </div>
+</div>

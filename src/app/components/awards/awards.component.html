@@ -1,0 +1,17 @@
+<div class="awards-container ">
+  <div class="header">Awards</div>
+  <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+    <div class="col mb-4" *ngFor="let award of awards">
+      <div class="card h-100">
+        <img [src]="award.img" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">{{ award.title }}</h5>
+          <p class="card-text">
+            {{ award.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

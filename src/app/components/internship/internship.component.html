@@ -1,0 +1,17 @@
+<div class="internship-container">
+  <div class="header">Internships</div>
+  <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+    <div class="col mb-4" *ngFor="let internship of internships">
+      <div class="card h-100">
+        <img [src]="internship.img" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">{{ internship.title }}</h5>
+          <div class="date">{{ internship.date }}</div>
+          <p class="card-text">
+            {{ internship.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

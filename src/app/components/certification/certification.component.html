@@ -1,0 +1,14 @@
+<div class="certi-container">
+  <div class="header">Online Certifications</div>
+  <div class="list-container">
+    <div class="item" *ngFor="let certification of certifications">
+      <div class="platform">
+        <div class="platform-img"><img [src]="certification.img" /></div>
+        <div class="platform-name">{{ certification.platformName }}</div>
+      </div>
+      <ul class="courses">
+        <li *ngFor="let course of certification.courses">{{ course }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

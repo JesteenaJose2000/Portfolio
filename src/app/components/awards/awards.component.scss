@@ -1,0 +1,33 @@
+@import "../../styles.scss";
+
+.awards-container {
+  background-color: $secondary-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: serif;
+  padding-top: 50px;
+}
+
+img {
+  pointer-events: none;
+}
+
+.card {
+  max-width: 350px;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  margin: 0;
+}
+
+.card-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
