@@ -10,7 +10,7 @@ export class ProjectComponent implements OnInit {
   projects: Project[] = [
     {
       title: 'Book Store',
-      video: '../../../assets/image/Bookstore.mp4',
+      video: 'assets/image/Bookstore.mp4',
       description: `This project is an e-commerce application designed for purchasing books. It features both
 admin and user modules, allowing administrators to input book details and manage the application's
 content, while users can browse, select, and purchase books seamlessly. The application is developed using
@@ -20,11 +20,11 @@ Angular for the frontend and .NET for robust backend functionality.`,
     },
     {
       title: 'GFS Trace Farmer Asset Management System',
-      images: ['../../../assets/image/GFSTrace/farms.png',
-        '../../../assets/image/GFSTrace/grainInventory.png',
-        '../../../assets/image/GFSTrace/jobs.png',
-        '../../../assets/image/GFSTrace/spraylogs.png',
-        '../../../assets/image/GFSTrace/users.png'
+      images: ['.assets/image/GFSTrace/farms.png',
+        'assets/image/GFSTrace/grainInventory.png',
+        'assets/image/GFSTrace/jobs.png',
+        'assets/image/GFSTrace/spraylogs.png',
+        'assets/image/GFSTrace/users.png'
       ],
       description: `The objective of this system is to effectively manage
 farmers' assets, ensuring proper allocation of tools and tasks for farm workers. We use React.js and

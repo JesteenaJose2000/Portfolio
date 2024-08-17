@@ -10,27 +10,27 @@ export class CertificationComponent implements OnInit {
   certifications: Certifications[] = [
     {
       platformName: 'EDX',
-      img: '../../../assets/image/edx.png',
+      img: 'assets/image/edx.png',
       courses: ['Data Science: Visualization'],
     },
     {
       platformName: 'Coursera',
-      img: '../../../assets/image/coursera.webp',
+      img: 'assets/image/coursera.webp',
       courses: ['Web development', 'R programming', 'Blockchain Basics'],
     },
     {
       platformName: 'Udemy',
-      img: '../../../assets/image/udemy.png',
+      img: 'assets/image/udemy.png',
       courses: ['Artificial Intelligence', 'Machine Learning'],
     },
     {
       platformName: 'Great Learning',
-      img: '../../../assets/image/greatlearning.png',
+      img: 'assets/image/greatlearning.png',
       courses: ['Computer vision essentials'],
     },
     {
       platformName: 'Nptel',
-      img: '../../../assets/image/nptel.png',
+      img: 'assets/image/nptel.png',
       courses: ['Programming, Data structures and algorithms using Python'],
     },
   ];
