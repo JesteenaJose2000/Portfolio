@@ -98,13 +98,7 @@
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "branch": "gh-pages",
-            "repo": "https://github.com/JesteenaJose2000/Portfolio.git"
-          }
+        
         }
       }
     }
