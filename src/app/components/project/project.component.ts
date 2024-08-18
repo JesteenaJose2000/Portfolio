@@ -20,7 +20,7 @@ Angular for the frontend and .NET for robust backend functionality.`,
     },
     {
       title: 'GFS Trace Farmer Asset Management System',
-      images: ['.assets/image/GFSTrace/farms.png',
+      images: ['assets/image/GFSTrace/farms.png',
         'assets/image/GFSTrace/grainInventory.png',
         'assets/image/GFSTrace/jobs.png',
         'assets/image/GFSTrace/spraylogs.png',
